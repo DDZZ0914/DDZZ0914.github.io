@@ -123,14 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
     proj1: {
       title: 'ROBOCON "武林探秘" R2 机器人',
       image: 'images/project1.jpg',
-      videos: [
-        'images/video1.mp4',
-        'images/video2.mp4',
-        'images/video3.mp4',
-        'images/video4.mp4',
-        'images/video_r2_5.mp4',
-        'images/video_r2_6.mp4',
-      ],
       description: '第25届全国大学生机器人大赛 ROBOCON，R2 机器人需自动完成移箱、抓取对接、越障爬坡多任务，整车结构复杂、多机构联动。全权负责 R2 全部机械系统设计、元器件选型、建模加工与整机装配调试。',
       tags: ['SolidWorks', '舵轮底盘', '多机构联动', '机电协同'],
       highlights: [
@@ -160,11 +152,6 @@ document.addEventListener('DOMContentLoaded', () => {
     proj3: {
       title: 'ROBOCON "飞身上篮" 运球机构',
       image: 'images/project3.png',
-      videos: [
-        'images/video_fly1.mp4',
-        'images/video_fly2.mp4',
-        'images/video_fly3.mp4',
-      ],
       description: '第24届 ROBOCON 飞身上篮项目，机器人需完成自主运球、全场竞技对抗、投篮等任务。运球机构为机器人核心执行单元，依靠真空吸盘吸附球体与气缸完成高速运球。',
       tags: ['气动设计', '真空吸盘', '轻量化', '实用新型专利'],
       highlights: [
@@ -172,25 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
         '调研多套方案择优设计，同步规划气缸、视觉、电控安装位置',
         '完成气动元器件选型（真空吸盘气路系统），操作雕刻机/3D 打印加工装配',
         '助力团队拿下技能赛、竞技赛两项全国二等奖，依托该机构完成实用新型专利 1 项',
-      ],
-    },
-    proj4: {
-      title: '个人核心竞争力',
-      image: 'images/award1.png',
-      awards: [
-        'images/award1.png',
-        'images/award2.png',
-        'images/award3.png',
-        'images/award4.png',
-        'images/award5.png',
-      ],
-      description: '两年 ROBOCON 赛事历练，从参与设计成长为独立负责人和整机总负责人，积累了从概念设计到样机落地的完整机械开发能力。',
-      tags: ['元器件选型', '全流程制造', '快速建模出图', '结构迭代'],
-      highlights: [
-        '机电一体化协同设计思维：结构设计阶段同步统筹机械、电控、视觉系统匹配',
-        '精通动力元件选型：熟悉达妙、大疆、灵足等多款伺服/动力电机性能参数，可根据负载、转速、控制需求匹配选型',
-        'SolidWorks 效率优异：单日可完成多套整机三维建模，输出可直接投产工程图纸',
-        '样机全流程落地：掌握 CNC、3D 打印、数控雕刻机操作，独立实现设计到实物快速闭环',
       ],
     },
   };

@@ -1,120 +1,35 @@
-# 机械结构实习作品集网站
+# 冯迪 · 个人简历 / 作品集
 
-纯静态个人作品集网站，专为机械工程专业学生设计，适合向 HR 展示个人技能和项目经历。
+> 机械结构设计方向 | 西南交通大学（211） | 两年 ROBOCON 赛事经验
 
-## 技术特点
+## 关于我
 
-- **零依赖**：纯 HTML + CSS + JavaScript，无需安装任何工具
-- **响应式**：适配桌面、平板、手机
-- **快速部署**：可直接用 GitHub Pages 托管
-- **简洁专业**：清晰的设计，突出内容本身
+西南交通大学机械设计制造及其自动化专业在读，预计 2027 年 6 月毕业。具备两年 ROBOCON 全国大学生机器人大赛实战经验，覆盖从概念设计、三维建模、元器件选型到加工制造、装配调试的完整机械开发流程。独立负责过多款机器人核心机构的研发，正在寻找机械结构方向的实习机会。
 
-## 快速开始
+## 项目经历
 
-### 本地预览
+### 第25届 ROBOCON "武林探秘" — R2 机器人（2025.07 - 至今）
+R2 机器人机械系统总负责人。全权负责全部机械系统设计，自研舵轮底盘、矛头微调对接机构、四齿轮齿条越障机构、KFS 纸箱存取机构，机电协同适配。
 
-直接在浏览器中打开 `index.html` 即可。
+### 四足巡检机器人 — 省级科创项目（2025.06 - 2026.04）
+整机机械结构总负责人。设计四自由度仿生腿部与轻量化机身，获 ROBOCON 越野赛全国一等奖、障碍/竞速赛全国二等奖。
 
-或者在项目目录下启动一个本地服务器：
+### 第24届 ROBOCON "飞身上篮" — 运球机构（2025.07 - 2025.08）
+运球机构独立负责人。真空吸盘 + 气缸方案，获两项全国二等奖、实用新型专利 1 项。
 
-```bash
-# Python 3
-python -m http.server 8080
+## 技能
 
-# 然后在浏览器打开 http://localhost:8080
-```
+- **设计建模**：SolidWorks、AutoCAD、Creo
+- **仿真分析**：ANSYS 有限元分析、运动学/动力学分析
+- **加工制造**：CNC 数控加工、3D 打印、数控雕刻机
+- **其他**：元器件选型、技术文档/专利撰写、C++ / Python
 
-### 部署到 GitHub Pages
+## 联系方式
 
-1. 在 GitHub 创建一个新仓库（例如 `portfolio`）
-2. 将本目录下的文件推送到仓库：
+- 📧 邮箱：2876138001@qq.com
+- 📱 电话 / 微信：188-8450-6434
+- 📍 所在地：中国 · 成都
 
-```bash
-cd portfolio
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/你的用户名/portfolio.git
-git branch -M main
-git push -u origin main
-```
+## 网站
 
-3. 在仓库的 **Settings → Pages** 中：
-   - Source 选择 `Deploy from a branch`
-   - Branch 选择 `main`，文件夹选择 `/ (root)`
-   - 点击 Save
-
-4. 等待几分钟，网站将在 `https://你的用户名.github.io/portfolio` 上线。
-
-### 绑定自定义域名
-
-1. 在 `Settings → Pages → Custom domain` 中填入你的域名
-2. 在你的域名 DNS 中添加一条 CNAME 记录指向 `你的用户名.github.io`
-3. 勾选 `Enforce HTTPS`
-
-## 自定义内容
-
-### 需要替换的内容（按优先级）
-
-所有内容在 `index.html` 文件中，搜索 `TODO` 即可定位：
-
-| 优先级 | 内容 | 位置 |
-|--------|------|------|
-| ⭐⭐⭐ | 姓名、学校、专业 | Hero、关于我、页脚 |
-| ⭐⭐⭐ | ROBOCON 实际经历 | 赛事经历区块 |
-| ⭐⭐⭐ | 邮箱、电话等联系方式 | 联系方式区块 |
-| ⭐⭐ | 技能及其熟练度 | 技能专长区块 |
-| ⭐⭐ | 项目名称和描述 | 项目作品 + `js/main.js` 中的 projectDetails |
-| ⭐ | GitHub/LinkedIn 链接 | 联系方式 |
-| ⭐ | 简历 PDF 文件 | 联系方式（放置 `images/resume.pdf`）|
-
-### 替换图片
-
-将你的图片放入 `images/` 目录，然后更新对应的路径：
-
-- **个人照片**：`index.html` 中「关于我」区块，替换占位 div 为 `<img>` 标签
-- **项目图片**：`index.html` 中项目卡片，替换占位 div
-- **比赛照片**：`index.html` 中赛事经历，取消注释 img 标签
-- **简历 PDF**：放置为 `images/resume.pdf`
-
-建议图片尺寸：
-- 个人照片：400×500px
-- 项目缩略图：800×500px
-- 比赛照片：800×450px
-
-### 修改配色
-
-在 `css/style.css` 开头的 `:root` 中修改 CSS 变量：
-
-```css
---color-accent: #2563eb;       /* 主色调 */
---color-accent-dark: #1d4ed8;  /* 深色变体 */
---color-accent-light: #eff6ff; /* 浅色变体 */
-```
-
-## 文件结构
-
-```
-portfolio/
-├── index.html          # 主页面
-├── css/
-│   └── style.css       # 样式表
-├── js/
-│   └── main.js         # 交互逻辑 + 项目详情数据
-├── images/             # 图片和简历
-│   ├── photo.jpg       # 个人照片（待添加）
-│   ├── resume.pdf      # 简历 PDF（待添加）
-│   └── ...             # 项目/比赛图片（待添加）
-└── README.md           # 本文件
-```
-
-## 浏览器兼容
-
-- Chrome 90+
-- Firefox 90+
-- Safari 15+
-- Edge 90+
-
-## License
-
-MIT — 随意使用和修改。
+本仓库托管于 GitHub Pages，在线访问：[DDZZ0914.github.io](https://DDZZ0914.github.io)
